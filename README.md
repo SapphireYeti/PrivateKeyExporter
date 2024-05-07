@@ -30,7 +30,7 @@ PrivateKeyExporter is a utility designed for Windows administrators who need a s
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
 
 ## Disclaimer
 
