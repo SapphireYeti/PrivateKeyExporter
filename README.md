@@ -32,6 +32,10 @@ PrivateKeyExporter is a utility designed for Windows administrators who need a s
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
 
+## Contributing
+
+While this project is open source, it's primarily maintained and developed by the author. I am not currently looking for contributions or modifications to this codebase. However, you are welcome to fork this repository and adapt it as you see fit under the terms of the MIT License.
+
 ## Disclaimer
 
 This tool is provided as-is, and the responsibility for secure handling and storage of private keys rests with the user. Always ensure private keys are handled securely to prevent unauthorized access.
