@@ -62,7 +62,13 @@ class Program
                 int index = 1;
                 foreach (X509Certificate2 cert in foundCertificates)
                 {
-                    Console.WriteLine($"{index}) Subject: {cert.Subject}, Issuer: {cert.Issuer}, Created: {cert.NotBefore}, Key Exists: {cert.HasPrivateKey}");
+                    Console.Write($"{index}) ");
+                    SetConsoleColor("Subject:", ConsoleColor.Cyan);
+                    Console.Write($" {cert.Subject}, ");
+                    SetConsoleColor("Issuer:", ConsoleColor.Cyan);
+                    Console.Write($" {cert.Issuer}, ");
+                    SetConsoleColor("Created:", ConsoleColor.Cyan);
+                    Console.WriteLine($" {cert.NotBefore}");
                     index++;
                 }
 
@@ -102,6 +108,13 @@ class Program
         {
             store.Close();
         }
+    }
+
+    static void SetConsoleColor(string text, ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
+        Console.Write(text);
+        Console.ResetColor();  // Reset to default color
     }
 
     private static void HandleCertificate(X509Certificate2 certificate)
