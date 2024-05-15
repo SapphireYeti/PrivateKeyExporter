@@ -57,7 +57,7 @@ class Program
             if (foundCertificates.Count > 0)
             {
                 Console.WriteLine("Select a certificate:");
-                Console.WriteLine("0) NOT LISTED");
+                Console.WriteLine("0) NOT LISTED / EXIT");
 
                 int index = 1;
                 foreach (X509Certificate2 cert in foundCertificates)
@@ -75,7 +75,15 @@ class Program
                 Console.WriteLine("");
 
                 Console.Write("Enter your choice: ");
-                int selectedIndex = int.Parse(Console.ReadLine());
+                int selectedIndex = 0; //Default
+                try 
+                {
+                    selectedIndex = int.Parse(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.Write("Invalid input entered. ");
+                }                
 
                 Console.WriteLine("");
 
