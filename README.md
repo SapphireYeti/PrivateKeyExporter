@@ -28,6 +28,11 @@ PrivateKeyExporter is a utility designed for Windows administrators who need a s
 3. Select the certificate from the list provided by the application.
 4. Follow the prompts to export the private key, which will be saved as a PEM encoded file in the PKCS#8 format.
 
+### Demonstration
+
+Here is a demonstration of how the compiled software works:
+![Demo of PrivateKeyExporter software](https://github.com/SapphireYeti/PrivateKeyExporter/blob/master/PrivateKeyExporter.gif)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
