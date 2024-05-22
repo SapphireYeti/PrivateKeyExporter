@@ -31,6 +31,7 @@ PrivateKeyExporter is a utility designed for Windows administrators who need a s
 ### Demonstration
 
 Here is a demonstration of how the compiled software works:
+
 ![Demo of PrivateKeyExporter software](https://github.com/SapphireYeti/PrivateKeyExporter/blob/master/PrivateKeyExporter.gif)
 
 ## License
